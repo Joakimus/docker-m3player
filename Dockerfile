@@ -5,7 +5,7 @@ VOLUME ["/home/super/Música"]
 #RUN echo "nameserver 10.27.100.2" > /etc/resolv.conf && \
 RUN apt-get update && \
 apt-get -y upgrade && \
-apt-get install -y mplayer && \
+apt-get -y install mplayer && \
 apt-get clean && apt-get autoclean && \
 rm -rf /var/lib/apt/lists/*
 
